@@ -1,0 +1,22 @@
+h1 {
+    font-family: Verdana;
+    background-color: blueviolet;
+    color: rgb(255, 133, 253);
+    padding: 15px;
+    padding-left: 100px;
+
+}
+p.indent {
+    text-indent: 30px;
+    color: rgb(112, 0, 139);
+}
+body {
+    background-color: rgb(249, 215, 250);
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+div.card {
+    background-color: rgb(245, 152, 242);
+}
