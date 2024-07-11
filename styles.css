@@ -16,7 +16,17 @@ body {
 nav {
     display: flex;
     justify-content: space-around;
+    background-color: blueviolet;
 }
 div.card {
     background-color: rgb(245, 152, 242);
+}
+a {
+    color: rgb(250, 230, 99);
+}
+#myFooter {
+    background-color: rgb(127, 138, 255);
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;   
 }
