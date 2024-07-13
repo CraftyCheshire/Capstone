@@ -1,7 +1,7 @@
 h1 {
     font-family: Verdana;
-    background-color: blueviolet;
-    color: rgb(255, 133, 253);
+    background-color: rgb(230, 208, 251);
+    color: salmon;
     padding: 15px;
     padding-left: 100px;
 
@@ -11,18 +11,18 @@ p.indent {
     color: rgb(112, 0, 139);
 }
 body {
-    background-color: rgb(249, 215, 250);
+    background-color: antiquewhite;
 }
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: blueviolet;
+    background-color: antiquewhite;
 }
 div.card {
-    background-color: rgb(245, 152, 242);
+    background-color: salmon;
 }
 a {
-    color: rgb(250, 230, 99);
+    color: black;
 }
 #myFooter {
     background-color: rgb(127, 138, 255);
