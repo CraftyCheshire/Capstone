@@ -1,5 +1,7 @@
 function myFunction() {
-  document.getElementById("yolo").style.fontSize = "35px"; 
-  document.getElementById("yolo").style.color = "yellow";
-  document.getElementById("yolo").style.backgroundColor = "red";        
+  document.getElementById("changeUp").style.fontSize = "35px"; 
+  document.getElementById("changeUp").style.color = "yellow";
+  document.getElementById("changeUp").style.backgroundColor = "red";        
 }
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
