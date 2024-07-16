@@ -1,6 +1,7 @@
 h1 {
     font-family: Verdana;
-    background-color: rgb(230, 208, 251);
+    font-size: 85.5px;
+    background-color: rgb(249, 237, 182);
     color: salmon;
     padding: 15px;
     padding-left: 100px;
@@ -8,7 +9,6 @@ h1 {
 }
 p.indent {
     text-indent: 30px;
-    color: rgb(112, 0, 139);
 }
 body {
     background-color: antiquewhite;
@@ -25,7 +25,7 @@ a {
     color: black;
 }
 #myFooter {
-    background-color: rgb(127, 138, 255);
+    background-color: rgb(206, 210, 252);
     text-align: center;
     padding: 50px;
     font-weight: bold;   
