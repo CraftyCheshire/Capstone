@@ -30,3 +30,12 @@ a {
     padding: 50px;
     font-weight: bold;   
 }
+.photo {
+    margin: 10px;
+    display: inline-block;
+  }
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+  }

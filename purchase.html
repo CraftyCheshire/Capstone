@@ -17,74 +17,58 @@
   </nav>
 
   <h1>Buy Your Favorites</h1>
-  <div class="row">
-    <div class="col-md-4 col-sm-6">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81JWTCOVxsL._AC_UF894,1000_QL80_.jpg" alt="canvas 5x5">
-        <div class="card-body">
-          <h5 class="card-title">Canvas 5x5</h5>
-          <p class="card-text">Purchase your choice of photo</p>
-          <a href="#" class="btn btn-primary">Buy Now!</a>
-        </div>
-      </div>
+  <div>
+    <div class="photo">
+      <img src="img\10.jpg" alt="Photo 1" width="200">
+      <p>Price: $10</p>
+      <button onclick="addToCart('Photo 1', 10)" type="button" class="btn btn-info">Add to Cart</button>
     </div>
-    
-    <div class="col-md-4 col-sm-6">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://m.media-amazon.com/images/I/51c4APCp+8L._AC_UF894,1000_QL80_.jpg" alt="Canvas 8x11">
-        <div class="card-body">
-          <h5 class="card-title">Canvas 8x11</h5>
-          <p class="card-text">Purchase your choice of photo</p>
-          <a href="#" class="btn btn-primary">Buy Now!</a>
-        </div>
-      </div>
+    <div class="photo">
+      <img src="img\1.jpg" alt="Photo 2" width="200">
+      <p>Price: $15</p>
+      <button onclick="addToCart('Photo 2', 15)" type="button" class="btn btn-info">Add to Cart</button>
     </div>
-
-    <div class="col-md-4 col-sm-6">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://canvaslot.com/images/296x_images/24x32_blank_canvas.jpg" alt="Canvas 24x32">
-        <div class="card-body">
-          <h5 class="card-title">Canvas 24x32</h5>
-          <p class="card-text">Purchase your choice of photo</p>
-          <a href="#" class="btn btn-primary">Buy Now!</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-sm-6">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://media.squared.one/squared/production/files/2022/05/25/07/32/25/12c5da7c-c786-4f4e-985b-076c6189009e/ter05567.jpg" alt="wallet prints">
-        <div class="card-body">
-          <h5 class="card-title">Prints (wallets)</h5>
-          <p class="card-text">Purchase your choice of photo</p>
-          <a href="#" class="btn btn-warning">Buy Now!</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-sm-6">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71Rs8Ifn5lL._AC_UF894,1000_QL80_.jpg" alt="prints 5x7">
-        <div class="card-body">
-          <h5 class="card-title">Prints 5x7</h5>
-          <p class="card-text">Purchase your choice of photo</p>
-          <a href="#" class="btn btn-warning">Buy Now!</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-sm-6">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://i5.walmartimages.com/seo/8x11-Black-Picture-Frame-for-Puzzles-Posters-Photos-or-Artwork-Set-of-4_bbc3c78f-08be-483a-b61f-50cf2e503aa8.6d46e1b3289a4f45d80135c5b9909f41.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="prints 8x11">
-        <div class="card-body">
-          <h5 class="card-title">Prints 8x11</h5>
-          <p class="card-text">Purchase your choice of photo</p>
-          <a href="#" class="btn btn-warning">Buy Now!</a>
-        </div>
-      </div>
+    <div class="photo">
+      <img src="img\21.jpg" alt="Photo 3" width="200">
+      <p>Price: $10</p>
+      <button onclick="addToCart('Photo 3', 10)" type="button" class="btn btn-info">Add to Cart</button>
     </div>
   </div>
-
+  
+  <div class="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: $<span id="totalPrice">0</span></p>
+    <button onclick="purchase()" type="button" class="btn btn-success">Purchase</button>
+  </div>
+  
+  <script>
+    let cart = [];
+    let total = 0;
+  
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      total += price;
+      updateCart();
+    }
+  
+    function updateCart() {
+      const cartItems = document.getElementById('cartItems');
+      cartItems.innerHTML = '';
+      cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - $${item.price}`;
+        cartItems.appendChild(li);
+      });
+      document.getElementById('totalPrice').textContent = total;
+    }
+  
+    function purchase() {
+      // This function would handle the payment process
+      alert(`Purchasing items worth $${total}`);
+    }
+  </script>
+  
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
