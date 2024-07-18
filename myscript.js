@@ -16,3 +16,18 @@ button.addEventListener('click', () => {
   countDisplay.textContent = count;
 });
 
+function checkAge() {
+    const name = document.getElementById('name').value;
+    const age = parseInt(document.getElementById('age').value, 10);
+
+    const resultDiv = document.getElementById('result');
+    resultDiv.style.display = 'block';
+
+    if (age >= 18) {
+      resultDiv.innerHTML = `<p>Welcome, ${name}! You are ${age} years old and eligible for the application.</p>`;
+    } else {
+      resultDiv.innerHTML = `<p>Sorry, ${name}. You are ${age} years old and not eligible for the application.</p>`;
+    }
+  }
+
+  

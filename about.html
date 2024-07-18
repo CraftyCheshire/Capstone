@@ -17,33 +17,114 @@
     <main>
         <h1 id="changeUp">About Modeling</h1>
     
-        <button type="button" class="btn btn-info" onclick="myFunction()">Change It Up!</button>
+        <div class="container">
+            <button type="button" class="btn btn-info" onclick="myFunction()">Change It Up!</button>
 
-        <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Enlongate your body to fill the screen and appear taller.">
-            Look Long!
-        </button>
+            <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Enlongate your body to fill the screen and appear taller.">
+                Look Long!
+            </button>
 
-        <button type="button" class="btn btn-warning" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Suck on your tongue to make your jawline more pronounced and to help give a pouty lip look.">
-            Tongue Sucker?
-        </button>        
-        
-        <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Don't forget to take care of yourself. Including, but not limited to, makeup that suits you & regular manicures">
-            Some TLC!
-        </button>
+            <button type="button" class="btn btn-warning" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Suck on your tongue to make your jawline more pronounced and to help give a pouty lip look.">
+                Tongue Sucker?
+            </button>        
 
-        <p class="indent">Modeling is a vibrant and exhilarating experience that intertwines creativity, expression, and artistry into one thrilling package. Whether it's strutting down the runway, capturing a timeless pose in front of the camera, or embodying a character for a shoot, modeling offers a unique blend of excitement and fulfillment. </p>
-        <p class="indent">Imagine the rush of adrenaline as you step onto the runway, feeling the eyes of the audience fixed on you, each step a rhythm of confidence and grace. Every click of the camera captures a moment frozen in time, a testament to your ability to convey emotion and style effortlessly.</p>
-        <p class="indent">Modeling isn't just about looking good—it's about telling a story through movement, expression, and fashion. It's about transforming into different personas, exploring diverse cultures, and pushing the boundaries of creativity. The thrill of trying on new outfits, experimenting with makeup and hairstyles, and collaborating with talented photographers and designers creates an atmosphere where every day brings new challenges and opportunities for growth.</p>
-        <p class="indent">Moreover, modeling fosters a community of like-minded individuals who share a passion for art and beauty. It's about building connections, learning from others, and celebrating diversity in all its forms. The industry thrives on innovation and inclusivity, constantly evolving to embrace new ideas and perspectives.</p>
-        <p class="indent">Above all, modeling is about embracing who you are and expressing yourself authentically. It's about celebrating your uniqueness and inspiring others to do the same. Whether you're on the catwalk, in a studio, or on location, modeling invites you to explore, create, and shine brightly in the world of fashion and beyond.</p>
+            <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Don't forget to take care of yourself. Including, but not limited to, makeup that suits you & regular manicures">
+                 Some TLC!
+            </button>
 
-        <a class="button" href="https://modelstudents.co.uk/blog/the-history-of-modelling/">Click here to read about the history of modeling</a>
+            <p class="indent">Modeling is a vibrant and exhilarating experience that intertwines creativity, expression, and artistry into one thrilling package. Whether it's strutting down the runway, capturing a timeless pose in front of the camera, or embodying a character for a shoot, modeling offers a unique blend of excitement and fulfillment. </p>
+            <p class="indent">Imagine the rush of adrenaline as you step onto the runway, feeling the eyes of the audience fixed on you, each step a rhythm of confidence and grace. Every click of the camera captures a moment frozen in time, a testament to your ability to convey emotion and style effortlessly.</p>
+            <p class="indent">Modeling isn't just about looking good—it's about telling a story through movement, expression, and fashion. It's about transforming into different personas, exploring diverse cultures, and pushing the boundaries of creativity. The thrill of trying on new outfits, experimenting with makeup and hairstyles, and collaborating with talented photographers and designers creates an atmosphere where every day brings new challenges and opportunities for growth.</p>
+            <p class="indent">Moreover, modeling fosters a community of like-minded individuals who share a passion for art and beauty. It's about building connections, learning from others, and celebrating diversity in all its forms. The industry thrives on innovation and inclusivity, constantly evolving to embrace new ideas and perspectives.</p>
+            <p class="indent">Above all, modeling is about embracing who you are and expressing yourself authentically. It's about celebrating your uniqueness and inspiring others to do the same. Whether you're on the catwalk, in a studio, or on location, modeling invites you to explore, create, and shine brightly in the world of fashion and beyond.</p>
+
+            <a class="button" href="https://modelstudents.co.uk/blog/the-history-of-modelling/">Click here to read about the history of modeling</a>
  
+        </div>
  
- 
- 
- 
- </p>
+        <h1>Top Five Runway Models</h1>
+  <div id="modelsContainer"></div>
+
+  <script>
+    const models = [
+      { name: 'Gigi Hadid', age: 26, agency: 'IMG Models', location: 'New York' },
+      { name: 'Kendall Jenner', age: 25, agency: 'The Society Management', location: 'Los Angeles' },
+      { name: 'Bella Hadid', age: 24, agency: 'IMG Models', location: 'New York' },
+      { name: 'Kaia Gerber', age: 20, agency: 'DNA Model Management', location: 'Los Angeles' },
+      { name: 'Adut Akech', age: 21, agency: 'Elite Model Management', location: 'Sydney' }
+    ];
+
+    const modelsContainer = document.getElementById('modelsContainer');
+
+    function displayModels() {
+      for (let i = 0; i < models.length; i++) {
+        const modelDiv = document.createElement('div');
+        modelDiv.className = 'model';
+        modelDiv.innerHTML = `
+          <h3>Model ${i + 1}: ${models[i].name}</h3>
+          <p><strong>Age:</strong> ${models[i].age}</p>
+          <p><strong>Agency:</strong> ${models[i].agency}</p>
+          <p><strong>Location:</strong> ${models[i].location}</p>
+        `;
+        modelsContainer.appendChild(modelDiv);
+      }
+    }
+
+    displayModels();
+  </script>
+     
+     <h2>Age Verification</h2>
+     <form id="ageForm">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" required>
+   
+       <label for="age">Age:</label>
+       <input type="number" id="age" name="age" required>
+   
+       <button type="button" onclick="checkAge()">Submit</button>
+     </form>
+   
+     <div id="result" style="display: internal;"></div>
+
+     
+ <h2>Model Application Form</h2>
+ <form id="modelForm">
+   <label for="name">Name:</label>
+   <input type="text" id="name" name="name" required>
+
+   <label for="age">Age:</label>
+   <input type="number" id="age" name="age" required>
+
+   <label for="agency">Desired Agency:</label>
+   <input type="text" id="agency" name="agency" required>
+
+   <label for="location">Desired Location:</label>
+   <input type="text" id="location" name="location" required>
+
+   <button type="button" class="btn btn-success" onclick="displayMessage()">Submit</button>
+ </form>
+
+ <div id="result" style="display: internal;"></div>
+
+ <script>
+   function displayMessage() {
+     const name = document.getElementById('name').value;
+     const age = document.getElementById('age').value;
+     const agency = document.getElementById('agency').value;
+     const location = document.getElementById('location').value;
+
+     const resultDiv = document.getElementById('result');
+     resultDiv.style.display = 'block';
+     resultDiv.innerHTML = `
+       <h2>Application Details</h2>
+       <p><strong>Name:</strong> ${name}</p>
+       <p><strong>Age:</strong> ${age}</p>
+       <p><strong>Desired Agency:</strong> ${agency}</p>
+       <p><strong>Desired Location:</strong> ${location}</p>
+       <p>Thank you for your submission, ${name}! We will review your application for the ${agency} agency in ${location}.</p>
+     `;
+   }
+ </script>
 
 
     </main>
