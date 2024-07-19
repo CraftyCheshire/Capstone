@@ -8,13 +8,13 @@ This is my Capstone project, a commemorative website to show just how far I've c
 mini_vann@ymail.com
 
 ## BUILT WITH
-# Canva
-# HTML
-# CSS
-# BootStrap
-# JavaScript
-# ChatGPT
-# My own two hands
+- Canva
+- HTML
+- CSS
+- BootStrap
+- JavaScript
+- ChatGPT
+- My own two hands
 
 ## ROADMAP
 [x] Create/Update README <br>
@@ -31,9 +31,9 @@ mini_vann@ymail.com
 https://www.canva.com/design/DAGKaN0S_eI/iTqNTPjYD9Umc5rsrfBMkA/view?utm_content=DAGKaN0S_eI&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
 ## ACKNOWLEDGEMENTS
-# Mr. Robert
-# The Blueberry room (Kabrini, Erick, and Dylan G.)
-# Nick Matavka
-# W3Schools
-# https://modelstudents.co.uk/blog/the-history-of-modelling/
-# GetBootstrap
+- Mr. Robert
+- The Blueberry room (Kabrini, Erick, and Dylan G.)
+- Nick Matavka
+- W3Schools
+- https://modelstudents.co.uk/blog/the-history-of-modelling/
+- GetBootstrap
