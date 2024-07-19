@@ -20,14 +20,13 @@ function checkAge() {
     const name = document.getElementById('name').value;
     const age = parseInt(document.getElementById('age').value, 10);
 
-    const resultDiv = document.getElementById('result');
-    resultDiv.style.display = 'block';
+    const result1Div = document.getElementById('result1');
+    result1Div.style.display = 'block';
 
     if (age >= 18) {
-      resultDiv.innerHTML = `<p>Welcome, ${name}! You are ${age} years old and eligible for the application.</p>`;
+      result1Div.innerHTML = `<p>Welcome, ${name}! You are ${age} years old and eligible for the application.</p>`;
     } else {
-      resultDiv.innerHTML = `<p>Sorry, ${name}. You are ${age} years old and not eligible for the application.</p>`;
+      result1Div.innerHTML = `<p>Sorry, ${name}. You are ${age} years old and not eligible for the application.</p>`;
     }
   }
 
-  

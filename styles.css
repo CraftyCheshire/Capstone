@@ -31,7 +31,7 @@ a {
 }
 
 #myFooter {
-    background-color: rgb(206, 210, 252);
+    background-color: salmon;
     text-align: center;
     padding: 50px;
     font-weight: bold;   
@@ -61,7 +61,16 @@ input {
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #cccccc9e;
-    background-color: #9ae585;
+    background-color: salmon;
+    border-radius: 5px;
+}
+
+#result1 {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #cccccc9e;
+    background-color: salmon;
     border-radius: 5px;
 }
 
@@ -69,8 +78,8 @@ form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: salmon;
     border-radius: 5px;
 }
 
@@ -85,4 +94,22 @@ input {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+
+#headshot {
+    width: calc(100%);
+    border-style: ridge;
+    border-width: 5px;
+    border-color: salmon;
+}
+
+div.col {
+    padding: 10px;
+}
+
+h2 {
+    background-color: rgb(249, 237, 182);
+    color: salmon;
+    display: flex;
+    justify-content: center;
 }
