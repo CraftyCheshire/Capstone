@@ -43,48 +43,50 @@
         </div>
  
         <h1>Top Five Runway Models</h1>
-  <div id="modelsContainer"></div>
 
-  <script>
-    const models = [
-      { name: 'Gigi Hadid', age: 26, agency: 'IMG Models', location: 'New York' },
-      { name: 'Kendall Jenner', age: 25, agency: 'The Society Management', location: 'Los Angeles' },
-      { name: 'Bella Hadid', age: 24, agency: 'IMG Models', location: 'New York' },
-      { name: 'Kaia Gerber', age: 20, agency: 'DNA Model Management', location: 'Los Angeles' },
-      { name: 'Adut Akech', age: 21, agency: 'Elite Model Management', location: 'Sydney' }
-    ];
+  <div id="modelsContainer" class="container">
 
-    const modelsContainer = document.getElementById('modelsContainer');
+        <script>
+            const models = [
+                 { name: 'Gigi Hadid', age: 26, agency: 'IMG Models', location: 'New York' },
+                 { name: 'Kendall Jenner', age: 25, agency: 'The Society Management', location: 'Los Angeles' },
+                 { name: 'Bella Hadid', age: 24, agency: 'IMG Models', location: 'New York' },
+                 { name: 'Kaia Gerber', age: 20, agency: 'DNA Model Management', location: 'Los Angeles' },
+                 { name: 'Adut Akech', age: 21, agency: 'Elite Model Management', location: 'Sydney' }
+                ];
 
-    function displayModels() {
-      for (let i = 0; i < models.length; i++) {
-        const modelDiv = document.createElement('div');
-        modelDiv.className = 'model';
-        modelDiv.innerHTML = `
-          <h3>Model ${i + 1}: ${models[i].name}</h3>
-          <p><strong>Age:</strong> ${models[i].age}</p>
-          <p><strong>Agency:</strong> ${models[i].agency}</p>
-          <p><strong>Location:</strong> ${models[i].location}</p>
-        `;
-        modelsContainer.appendChild(modelDiv);
-      }
-    }
+            const modelsContainer = document.getElementById('modelsContainer');
 
-    displayModels();
-  </script>
+            function displayModels() {
+                for (let i = 0; i < models.length; i++) {
+                const modelDiv = document.createElement('div');
+                modelDiv.className = 'model';
+                modelDiv.innerHTML = `
+                    <h3>Model ${i + 1}: ${models[i].name}</h3>
+                    <p><strong>Age:</strong> ${models[i].age}</p>
+                    <p><strong>Agency:</strong> ${models[i].agency}</p>
+                    <p><strong>Location:</strong> ${models[i].location}</p>
+                    `;
+                    modelsContainer.appendChild(modelDiv);
+                }
+             }
+
+            displayModels();
+        </script>
      
-     <h2>Age Verification</h2>
-     <form id="ageForm">
-       <label for="name">Name:</label>
-       <input type="text" id="name" name="name" required>
+        <h2>Age Verification</h2>
+        <form id="ageForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
    
-       <label for="age">Age:</label>
-       <input type="number" id="age" name="age" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
    
-       <button type="button" class="btn btn-success" onclick="checkAge()">Submit</button>
-     </form>
+            <button type="button" class="btn btn-success" onclick="checkAge()">Submit</button>
+        </form>
    
      <div id="result1" style="display: internal;"></div>
+    </div>
 
      
  <h2>Model Application Form</h2>
